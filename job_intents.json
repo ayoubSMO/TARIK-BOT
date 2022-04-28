@@ -1,0 +1,52 @@
+{
+  "intents": [
+    {"tag": "Salam",
+     "patterns": ["Salam", "ahlen", "Salut", "hi", "Salamo 3alaykoum","Salamo 3alaykoum"],
+     "responses": ["Wa 3alikom salam", "Mer7ba Sidi", "Wa 3alikom Salam wa ra7mato lahi ta3ala wa barakatoh", "Mer7ba sidi tfdel !"]
+    },
+    {"tag": "chokran",
+     "patterns": ["Chokran", "merci", "Tbarkllah 3lik docteur", "lah i7fdek", "Merci bien"],
+     "responses": ["lah ijib shifa", "hada wajib sidi", "inshaalah ikoun khir", "Maykoun basss"]
+    },
+    {"tag": "skhana",
+     "patterns": ["fiya skhana" ,"kiderni rassi bzaf" ,"tal3a liya skhana wa9ila" ,"skhana" ],
+     "responses": ["sh7al akhir khetra l9iti fik fskhana", "sh7al fik ?", "7awel t3ber skhana dyalek"]
+     },
+     {"tag": "36°",
+      "patterns": ["fiya 36", "36", "sta otlatin", "sitaton wa talatoun"],
+      "responses": ["L hamdolillah l7arara msta9rra", "lhamdolillah l7arara habta", "mzyan lhamdolillah"]
+      },
+      {"tag": "37°",
+       "patterns": ["37", "37°", "sb3a wtlatin", "sab3atoun wa talatoun"],
+       "responses": ["chrb lma mzien ord lbal lrassk", "3ndak tkhrj fchmess bzaf", "dima kol lkhdra o dessert", "khoud vitamine D"]
+      },
+      {"tag": "38°",
+       "patterns": ["38", "38°", "tmnya wtlatin", "tamanaya wa talatoun"],
+       "responses": ["7awel takhod doliprane 500mg orta7 ", "khoud doliprane 500mg", "7awel takhod doliprane 500mg orta7 ", "khoud doliprane 500mg"]
+      },
+     {"tag": "39°",
+      "patterns": ["39", "39°", "ts3a wtlatin", "tiss3a wa talatoun"],
+      "responses": ["khoud lik doliprane 1g orta7"," doliprane 1g", "khoud lik doliprane 1000g orta7"," doliprane 1000g"]
+      },
+      {"tag": "40",
+       "patterns": ["40", "40°", "rb3in", "araba3oun"],
+       "responses": ["7awel tmshi l a9rab mosta3jalat","khassek tbib darouri", "7awel tmshi l a9rab mosta3jalat","khassek tbib darouri"]
+      },
+      {"tag": "41",
+       "patterns": ["41", "41", "wahd orb3in", "wahd o rb3in", "wahidon wa araba3oun"],
+       "responses": ["7awel tmshi l a9rab mosta3jalat","khassek tbib darouri", "7awel tmshi l a9rab mosta3jalat","khassek tbib darouri"]
+      },
+      {"tag": "nifi",
+       "patterns": ["nifi kayssil", "nifi", "lkhnona", "mabghach ihbss nifi"],
+       "responses": ["7awel takhd rinomicine","khod vitamine C", "vitamine C","Kol limon mzien"]
+      },
+      {"tag": "lke7a",
+       "patterns": ["fiya lke7a", "lke7ba", "ko7aa", "keha"],
+       "responses": ["7awel tcherb zit qbel matn3ss","l3ssel l7our", "l3ssel lhour","zit lbldya blil"]
+      },
+      {"tag": "soti",
+       "patterns": ["sot mcha", "wlit mbe7be7", "sdri 3amr k7aa", "tnkhimaa"],
+       "responses": ["l3ssel l7our fsbah", "l3ssel lhour 9bel matn3ss","zit lbldya blil otghta mzien"]
+      }
+  ]
+}

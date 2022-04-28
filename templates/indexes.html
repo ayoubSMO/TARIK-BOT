@@ -1,0 +1,77 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="./static/style.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="chat_window">
+    <div class="top_menu">
+        <div class="buttons">
+            <div class="button close">
+
+            </div>
+            <div class="button minimize">
+
+            </div><div class="button maximize"></div>
+        </div>
+        <div class="title">Tarik le médecin généraliste</div>
+    </div>
+    <div class="row">
+          <div class="col">
+            <ul class="response"><p id="response"></p></ul>
+          </div>
+        </div>
+    <div class="bottom_wrapper clearfix">
+        <div class="message_input_wrapper">
+            <input class="message_input" name="question" id="question" placeholder="Type your message here..." />
+        </div>
+        <div class="send_message">
+            <button class="btn btn-primary btn-block" id="submit-button">Send</button>
+        </div>
+    </div>
+</div>
+<div class="message_template">
+    <li class="message"><div class="avatar">
+
+    </div><div class="text_wrapper">
+
+    </div>
+    </li>
+</div>
+
+<script src="/static/jquery.min.js" ></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+      jQuery(document).ready(function() {
+
+        $("#submit-button").click(function(e) {
+          e.preventDefault();
+
+
+          $.ajax({
+              type: "POST",
+              url: "/chatbot",
+              data: {
+                  question: $("#question").val()
+              },
+              success: function(result) {
+                $("#response").append("<br>Me: "+$("#question").val()+ "<br> TARIK: "+result.response);
+                $("#question").val("")
+              },
+              error: function(result) {
+                  alert('error');
+              }
+          });
+
+
+
+        });
+
+      });
+
+
+    </script>
